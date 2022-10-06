@@ -1,0 +1,35 @@
+:root{
+    --night : rgb(51, 50, 50);
+    --night-soft: rgb(182, 180, 180);
+}
+
+
+
+
+body.night-mode{
+    background-color: var(--night);
+    transition: 0.5s;
+}
+.night-mode .divider{
+    background-color: var(--night);
+}
+/* .night-mode tr{
+    background-color: var(--night-soft);
+}
+.night-mode .output{
+    color: var(--night-soft);
+}
+.night-mode td{
+    color: var(--night-soft);
+}
+.night-mode input,.night-mode select{
+    color: var(--night);
+    background-color: var(--night-soft);
+} */
+.night-mode .mode-change{
+    background-color: var(--night-soft);
+}
+
+.night-mode .mode-icon{
+    color: var(--night);
+}

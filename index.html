@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+
+    <!-- Primary Meta Tags -->
+    <title>Exchange Calculator</title>
+    <meta name="title" content="Exchange Calculator">
+    <meta name="description" content="my first javascript practical">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mms-it.com">
+    <meta property="og:title" content="Exchange Calculator">
+    <meta property="og:description" content="my first javascript practical">
+    <meta property="og:image" content="img/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mms-it.com">
+    <meta property="twitter:title" content="Exchange Calculator">
+    <meta property="twitter:description" content="my first javascript practical">
+    <meta property="twitter:image" content="img/logo.png">
+
+    <title>Exchange Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="css/mode.css">
+</head>
+<body>
+    
+   <section>
+    <div class="exchange animate__animated animate__fadeInDown">
+        <div class="header">
+            <div class="brand-container">
+                <img src="img/exchangelogo.svg" class="logo" alt="">
+                <p class="brand">MMEx</p>
+            </div>
+            <div class="output-container">
+                <p class="output" id="output">00.0</p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="group-container">
+            <form class="input-group-container" id="calc">
+                <div class="container input-container">
+                    <label for="">Input</label>
+                    <input class="input" type="number" name="input" id="input" min="1" placeholder="" autofocus required>
+                </div>
+                <div class="container from-container">
+                    <label for="">Form</label>
+                    <select class="from" name="from" id="from" required>
+                        <option value="" selected>Select Currency</option>
+                    </select>
+                </div>
+                <div class="container to-container">
+                    <label for="">To</label>
+                    <select class="to" name="to" id="to" required>
+    
+                    </select>
+                </div>
+                <div class="container button-container">
+                    <button class="btn" id="calcBtn">Calculate</button>
+            </form>
+        </div>
+        <div class="table-container">
+            <table id="history">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody id="historylist">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+   </section>
+    <button class="mode-change animate__animated animate__fadeInUp" onclick="changeMode()">
+        <i class="fas fa-moon mode-icon"></i>
+    </button>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
